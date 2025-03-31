@@ -5,4 +5,6 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello, devopswithdocker! Part 2"}
+    return {
+        "message": "Hello, devopswithdocker! I am automatically deployed using GitHub Actions to Fly.io!"
+    }
